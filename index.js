@@ -1,7 +1,7 @@
 const express = require("express");
 const puppeteer = require("puppeteer");
 const bodyParser = require("body-parser");
-const port = 80;
+const port = 3000;
 
 
 const app = express();
@@ -53,3 +53,4 @@ app.get("/screenshot", async (req, res) => {
 app.listen(port, () => {
   console.log("Server running on http://localhost:"+port);
 });
+
